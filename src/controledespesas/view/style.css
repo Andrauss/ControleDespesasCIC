@@ -1,0 +1,88 @@
+/*
+ * Este código faz parte do projeto de exemplo do minicurso: 
+ * Introdução ao JavaFX, do 14º CIC da FASB
+ *
+ * Ministrado por: Fernando Andrauss e Andeson de Jesus
+ */
+
+/*
+  Personalizando o painel principal, a cor é um gradiente composto por 3 cores
+  o percentual define a porcão que cada or irá ocupar no painel
+*/
+.mainFxmlClass {
+    -fx-background-color: linear-gradient(white 10%, #e3f0fe 85%, #b4d6ff);
+}
+
+/*
+    Personalizando os campos de texto (textfields)
+*/
+.text-field {
+    -fx-background-radius: 0;
+    -fx-border-width: 2px; /* borda de 2 pixels */
+    -fx-border-color: #bababa; /* cor da borda do textfield */
+}
+
+.text-field:focused { /* :focused define o estilo quando o campo receber foco */
+    -fx-border-color: #0099ff; /* mudança na cor da borda */
+}
+
+/*
+    CheckBox
+*/
+.check-box > .box {
+    -fx-base: white;
+    -fx-background-radius: 0;
+    -fx-border-color: #bababa;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+    -fx-padding: 1;
+}
+
+.check-box:focused > .box {
+    -fx-border-color: #0099ff;
+}
+
+
+/*
+    TableView
+*/
+.table-view {
+    -fx-border-width: 2px;
+    -fx-border-color: #bababa;
+}
+
+.table-view .column-header {
+    -fx-background-color: linear-gradient(#90c2f4, #3093f7);
+    -fx-border-color: white;
+    -fx-border-width: 0 1 1 0;
+}
+
+.table-view .column-header .label {
+    -fx-font-size: 10.5pt;
+    -fx-text-fill: white;
+}
+
+/*
+    Button
+*/
+.button {
+    -fx-padding: 0;
+    -fx-border-width: 2px;
+    -fx-background-radius: 0;
+    -fx-border-radius: 0; 
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    -fx-font-size: 10.5pt;
+}
+.button:focused {
+    -fx-border-color: #0099ff;
+}
+
+#adicionar:default
+{
+    -fx-base: #00cc33;
+}
+#remover
+{
+    -fx-base: #f78059;
+}
